@@ -1,63 +1,193 @@
+/* Загальні стилі */
 body {
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
   color: #333;
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
 }
 
 header {
-  padding: 10px 0;
+  padding: 20px 0;
   background: #007bff;
   color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 header .logo h1 {
   margin: 0;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 nav ul li {
-  display: inline;
   margin: 0 15px;
 }
 
 nav ul li a {
   color: #fff;
+  font-weight: 600;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+  color: #ff6b00;
+}
+
+/* Секція Hero */
+
 .hero {
-  padding: 50px 20px;
-  background: #f4f4f4;
+  position: relative;
+  padding: 100px 20px;
+  background: url("../img/home.jpg") no-repeat center center/cover;
+  color: #fff;
   text-align: center;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5); /* Затемнення фону */
+}
+
+.hero h2,
+.hero p,
+.hero .cta-button {
+  position: relative;
+  z-index: 2;
+}
+
+/* .hero {
+  padding: 100px 20px;
+  background: url("tech-background.jpg") no-repeat center center/cover;
+  color: #242222;
+  text-align: center;
+} */
+
+/* 
+.hero h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  font-size: 1.2rem;
+} */
 
 .cta-button {
   padding: 10px 20px;
   border-radius: 5px;
-  background: #007bff;
+  background: #ff6b00;
   color: #fff;
+  font-weight: 600;
   text-decoration: none;
+  transition: background 0.3s ease;
 }
 
+.cta-button:hover {
+  background: #e65c00;
+}
+
+/* Секції */
 .services-overview,
 .about-us,
 .services,
 .contact {
-  padding: 20px;
+  margin: 20px 0;
+  padding: 50px 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+.services-overview h2,
+.about-us h2,
+.services h2,
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.service {
+  margin: 20px 0;
+}
+
+.service h3 {
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.service p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Форма зворотного зв'язку */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact button:hover {
+  background: #005bb5;
+}
+
+/* Футер */
 footer {
-  margin-top: 20px;
-  padding: 10px 0;
+  margin-top: 50px;
+  padding: 20px 0;
   background: #333;
   color: #fff;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
