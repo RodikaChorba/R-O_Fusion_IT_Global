@@ -23,6 +23,9 @@ function changeLanguage(lang) {
       );
     }
   });
+
+  // Зберігаємо вибрану мову в localStorage
+  localStorage.setItem("language", lang);
 }
 
 // Збереження мови

@@ -4,7 +4,10 @@ export const translations = {
     description:
       "We provide high-quality software development, cybersecurity, and project management services.",
     contactButton: "Contact Us",
+    home: "Home",
+    about: "About Us",
     services: "Our Services",
+    contact: "Contact",
     software: "Software Development",
     softwareDesc: "Creating modern software solutions for your business.",
     cybersecurity: "Cybersecurity",
@@ -19,7 +22,10 @@ export const translations = {
     description:
       "Ми надаємо високоякісні послуги з розробки ПЗ, кібербезпеки та управління проектами.",
     contactButton: "Зв'язатися з нами",
+    home: "Головна",
+    about: "Про нас",
     services: "Наші послуги",
+    contact: "Контакти",
     software: "Розробка ПЗ",
     softwareDesc: "Створення сучасних програмних рішень для вашого бізнесу.",
     cybersecurity: "Кібербезпека",
@@ -33,7 +39,10 @@ export const translations = {
     description:
       "Wir bieten hochwertige Dienstleistungen in den Bereichen Softwareentwicklung, Cybersicherheit und Projektmanagement.",
     contactButton: "Kontaktieren Sie uns",
+    home: "Startseite",
+    about: "Über uns",
     services: "Unsere Dienstleistungen",
+    contact: "Kontakt",
     software: "Softwareentwicklung",
     softwareDesc: "Erstellung moderner Softwarelösungen für Ihr Unternehmen.",
     cybersecurity: "Cybersicherheit",

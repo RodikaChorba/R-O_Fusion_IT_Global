@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Контакти | R³&O Fusion IT Global</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -13,27 +13,34 @@
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Головна</a></li>
-          <li><a href="about.html">Про нас</a></li>
-          <li><a href="services.html">Послуги</a></li>
-          <li><a href="contact.html">Контакти</a></li>
+          <li><a data-key="home" href="index.html">Головна</a></li>
+          <li><a data-key="about" href="about.html">Про нас</a></li>
+          <li><a data-key="services" href="services.html">Послуги</a></li>
+          <li><a data-key="contact" href="contact.html">Контакти</a></li>
+          <li>
+            <select id="language-switcher">
+              <option value="en">English</option>
+              <option value="ua">Українська</option>
+              <option value="de">Deutsch</option>
+            </select>
+          </li>
         </ul>
       </nav>
     </header>
 
     <section class="contact">
-      <h2>Зв'яжіться з нами</h2>
+      <h2 data-key="contactTitle">Зв'яжіться з нами</h2>
       <form action="#" method="post">
-        <label for="name">Ім'я:</label>
-        <input type="text" id="name" name="name" required />
+        <label data-key="formName" for="name">Ім'я:</label>
+        <input id="name" name="name" type="text" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <label data-key="formEmail" for="email">Email:</label>
+        <input id="email" name="email" type="email" required />
 
-        <label for="message">Повідомлення:</label>
+        <label data-key="formMessage" for="message">Повідомлення:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit">Надіслати</button>
+        <button data-key="formSubmit" type="submit">Надіслати</button>
       </form>
     </section>
 
@@ -41,6 +48,7 @@
       <p>&copy; 2023 R³&O Fusion IT Global. Усі права захищені.</p>
     </footer>
 
+    <script src="languages.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

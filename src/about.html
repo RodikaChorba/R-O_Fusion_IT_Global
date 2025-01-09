@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Про нас | R³&O Fusion IT Global</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -13,22 +13,29 @@
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Головна</a></li>
-          <li><a href="about.html">Про нас</a></li>
-          <li><a href="services.html">Послуги</a></li>
-          <li><a href="contact.html">Контакти</a></li>
+          <li><a data-key="home" href="index.html">Головна</a></li>
+          <li><a data-key="about" href="about.html">Про нас</a></li>
+          <li><a data-key="services" href="services.html">Послуги</a></li>
+          <li><a data-key="contact" href="contact.html">Контакти</a></li>
+          <li>
+            <select id="language-switcher">
+              <option value="en">English</option>
+              <option value="ua">Українська</option>
+              <option value="de">Deutsch</option>
+            </select>
+          </li>
         </ul>
       </nav>
     </header>
 
     <section class="about-us">
-      <h2>Про нас</h2>
-      <p>
+      <h2 data-key="about">Про нас</h2>
+      <p data-key="aboutDescription1">
         Ми — компанія "R³&O Fusion IT Global", заснована Rodika Chorba та Oleh
         Babych. Наша місія — надавати інноваційні IT-рішення для досягнення
         цілей наших клієнтів.
       </p>
-      <p>
+      <p data-key="aboutDescription2">
         Наші цінності: якість, інновації, гнучкість, прозорість та
         клієнтоорієнтованість.
       </p>
@@ -38,6 +45,7 @@
       <p>&copy; 2023 R³&O Fusion IT Global. Усі права захищені.</p>
     </footer>
 
+    <script src="languages.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
